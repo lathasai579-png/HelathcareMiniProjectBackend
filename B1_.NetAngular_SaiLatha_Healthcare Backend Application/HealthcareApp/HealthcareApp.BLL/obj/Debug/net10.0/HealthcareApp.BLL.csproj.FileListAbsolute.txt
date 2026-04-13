@@ -1,0 +1,17 @@
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\obj\Debug\net10.0\HealthcareApp.BLL.csproj.AssemblyReference.cache
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\obj\Debug\net10.0\HealthcareApp.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\obj\Debug\net10.0\HealthcareApp.BLL.AssemblyInfoInputs.cache
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\obj\Debug\net10.0\HealthcareApp.BLL.AssemblyInfo.cs
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\obj\Debug\net10.0\HealthcareApp.BLL.csproj.CoreCompileInputs.cache
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\bin\Debug\net10.0\HealthcareApp.BLL.deps.json
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\bin\Debug\net10.0\HealthcareApp.BLL.dll
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\bin\Debug\net10.0\HealthcareApp.BLL.pdb
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\bin\Debug\net10.0\HealthcareApp.DAL.dll
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\bin\Debug\net10.0\HealthcareApp.Entities.dll
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\bin\Debug\net10.0\HealthcareApp.DAL.pdb
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\bin\Debug\net10.0\HealthcareApp.Entities.pdb
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\obj\Debug\net10.0\Healthca.9CB09C57.Up2Date
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\obj\Debug\net10.0\HealthcareApp.BLL.dll
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\obj\Debug\net10.0\refint\HealthcareApp.BLL.dll
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\obj\Debug\net10.0\HealthcareApp.BLL.pdb
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.BLL\obj\Debug\net10.0\ref\HealthcareApp.BLL.dll

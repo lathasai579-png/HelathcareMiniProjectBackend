@@ -1,0 +1,60 @@
+﻿@model IEnumerable<HealthcareApp.BLL.DTOs.DoctorDto>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container mt-4">
+
+    <h2>Doctor Management</h2>
+
+    <a href="/Doctor/Create" class="btn btn-primary mb-3">+ Add Doctor</a>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">@TempData["Success"]</div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+
+    <table class="table table-bordered table-striped text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Specialization</th>
+                <th>Available Time</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.DoctorId</td>
+                    <td>@item.Name</td>
+                    <td>@item.Specialization</td>
+                    <td>@item.AvailableTimeSlot</td>
+                    <td>
+                        <a href="/Doctor/Edit/@item.DoctorId" class="btn btn-warning btn-sm">Edit</a>
+
+                        <a href="/Doctor/Delete/@item.DoctorId"
+                           onclick="return confirm('Are you sure?')"
+                           class="btn btn-danger btn-sm">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+</html>

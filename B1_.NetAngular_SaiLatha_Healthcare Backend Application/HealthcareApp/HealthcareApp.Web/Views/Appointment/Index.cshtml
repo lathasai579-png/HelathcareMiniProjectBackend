@@ -1,0 +1,53 @@
+﻿@model IEnumerable<HealthcareApp.Web.ViewModels.AppointmentViewModel>
+
+<h2>Appointments</h2>
+
+<!-- 🔥 BOOK BUTTON -->
+<a href="/Appointment/Create" class="btn btn-primary mb-3">
+    Book Appointment
+</a>
+
+<table class="table table-bordered">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Patient</th>
+            <th>Doctor</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.AppointmentId</td>
+                <td>@item.PatientName</td>
+                <td>@item.DoctorName</td>
+                <td>@item.Date.ToShortDateString()</td>
+                <td>@item.TimeSlot</td>
+                <td>@item.Status</td>
+
+                <td>
+                    <!-- ✅ EDIT -->
+                    <a href="/Appointment/Edit/@item.AppointmentId"
+                       class="btn btn-warning btn-sm">
+                        Edit
+                    </a>
+
+                    <!-- ✅ DELETE -->
+                    <a href="/Appointment/Delete/@item.AppointmentId"
+                       class="btn btn-danger btn-sm"
+                       onclick="return confirm('Are you sure?')">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

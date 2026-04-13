@@ -1,0 +1,121 @@
+﻿@using HealthcareApp.BLL.DTOs
+@model IEnumerable<PatientDto>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Management</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background-color: #f4f6f8;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .btn-add {
+            background-color: green;
+        }
+
+        .btn-edit {
+            background-color: orange;
+        }
+
+        .btn-delete {
+            background-color: red;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #eaeaea;
+        }
+
+        .msg {
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .search-box {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Patient Management</h2>
+
+    <!-- ✅ SEARCH (ADDED) -->
+    <form method="get" class="search-box">
+        <input type="text" name="search" placeholder="Search by Name / Phone"
+               style="padding:6px; width:250px;" />
+        <button type="submit" class="btn btn-add">Search</button>
+    </form>
+
+    <!-- ✅ ADD BUTTON -->
+    <a href="/Patient/Create" class="btn btn-add">+ Add Patient</a>
+
+    <!-- ✅ SUCCESS MESSAGE -->
+    @if (TempData["msg"] != null)
+    {
+        <div class="msg">@TempData["msg"]</div>
+    }
+
+    <!-- ✅ TABLE -->
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Notes</th>
+            <th>Action</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.PatientId</td>
+                <td>@item.Name</td>
+                <td>@item.Age</td>
+                <td>@item.Gender</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.Email</td>
+                <td>@item.MedicalNotes</td>
+                <td>
+                    <a href="/Patient/Details/@item.PatientId" class="btn">View</a>
+                    <a href="/Patient/Edit/@item.PatientId" class="btn btn-edit">Edit</a>
+                    <a href="/Patient/Delete/@item.PatientId" class="btn btn-delete">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+</body>
+</html>

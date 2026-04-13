@@ -1,0 +1,29 @@
+﻿@model HealthcareApp.BLL.DTOs.PatientDto
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Patient</title>
+</head>
+
+<body>
+
+    <h2>Edit Patient</h2>
+
+    <form method="post">
+
+        <input type="hidden" name="PatientId" value="@Model.PatientId" />
+
+        <input name="Name" value="@Model.Name" /><br />
+        <input name="Age" value="@Model.Age" /><br />
+        <input name="Gender" value="@Model.Gender" /><br />
+        <input name="PhoneNumber" value="@Model.PhoneNumber" /><br />
+        <input name="Email" value="@Model.Email" /><br />
+        <textarea name="MedicalNotes">@Model.MedicalNotes</textarea><br />
+
+        <button type="submit">Update</button>
+
+    </form>
+
+</body>
+</html>

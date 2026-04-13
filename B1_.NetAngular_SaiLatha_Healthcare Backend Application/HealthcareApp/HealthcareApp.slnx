@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="HealthcareApp.BLL/HealthcareApp.BLL.csproj" Id="23a74a31-aa5f-4d66-b712-41bee8a242d5" />
+  <Project Path="HealthcareApp.DAL/HealthcareApp.DAL.csproj" Id="3ad773ce-6c3c-4388-a233-29dc63860d81" />
+  <Project Path="HealthcareApp.Entities/HealthcareApp.Entities.csproj" Id="91c1499e-be25-4690-aeb8-7d2ec11d8bb0" />
+  <Project Path="HealthcareApp.Web/HealthcareApp.Web.csproj" />
+</Solution>

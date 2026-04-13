@@ -1,0 +1,47 @@
+﻿@model HealthcareApp.BLL.DTOs.DoctorDto
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Doctor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container mt-4">
+
+    <h2>Edit Doctor</h2>
+
+    <form method="post">
+
+        <input type="hidden" name="DoctorId" value="@Model.DoctorId" />
+
+        <div class="mb-3">
+            <label>Name</label>
+            <input name="Name" value="@Model.Name" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>Specialization</label>
+            <select name="Specialization" class="form-control">
+                <option @(Model.Specialization == "Cardiologist" ? "selected" : "")>Cardiologist</option>
+                <option @(Model.Specialization == "Dermatologist" ? "selected" : "")>Dermatologist</option>
+                <option @(Model.Specialization == "Neurologist" ? "selected" : "")>Neurologist</option>
+                <option @(Model.Specialization == "Pediatrician" ? "selected" : "")>Pediatrician</option>
+                <option @(Model.Specialization == "Orthopedic" ? "selected" : "")>Orthopedic</option>
+                <option @(Model.Specialization == "General Physician" ? "selected" : "")>General Physician</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Available Time</label>
+            <input name="AvailableTimeSlot" value="@Model.AvailableTimeSlot" class="form-control" />
+        </div>
+
+        <button class="btn btn-warning">Update</button>
+        <a href="/Doctor/Index" class="btn btn-secondary">Back</a>
+
+    </form>
+
+</body>
+</html>

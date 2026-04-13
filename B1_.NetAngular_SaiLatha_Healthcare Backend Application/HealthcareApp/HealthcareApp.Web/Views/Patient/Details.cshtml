@@ -1,0 +1,61 @@
+﻿@model HealthcareApp.BLL.DTOs.PatientDto
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Details</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background-color: #f4f6f8;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            width: 400px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            text-decoration: none;
+            border-radius: 4px;
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Patient Details</h2>
+
+<div class="box">
+
+    <p><b>ID:</b> @Model.PatientId</p>
+    <p><b>Name:</b> @Model.Name</p>
+    <p><b>Age:</b> @Model.Age</p>
+    <p><b>Gender:</b> @Model.Gender</p>
+    <p><b>Phone:</b> @Model.PhoneNumber</p>
+    <p><b>Email:</b> @Model.Email</p>
+    <p><b>Medical Notes:</b> @Model.MedicalNotes</p>
+
+</div>
+
+<br />
+
+<a href="/Patient/Index" class="btn">Back</a>
+
+</body>
+</html>

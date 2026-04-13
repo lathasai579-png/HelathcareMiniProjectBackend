@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HealthcareApp</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="/">HealthcareApp</a>
+
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/Appointment/Index">Appointments</a>
+                    <a class="nav-link" href="/Patient/Index">Patients</a>
+                    <a class="nav-link" href="/Doctor/Index">Doctors</a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-3">
+
+        <!-- 🔥 TOAST -->
+        @if (TempData["success"] != null)
+        {
+            <div class="alert alert-success">@TempData["success"]</div>
+        }
+
+        @if (TempData["error"] != null)
+        {
+            <div class="alert alert-danger">@TempData["error"]</div>
+        }
+
+        @RenderBody()
+    </div>
+
+    <footer class="text-center mt-3">
+        <p>© 2026 HealthcareApp</p>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

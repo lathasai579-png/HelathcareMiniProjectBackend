@@ -1,0 +1,11 @@
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.Entities\bin\Debug\net10.0\HealthcareApp.Entities.deps.json
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.Entities\bin\Debug\net10.0\HealthcareApp.Entities.dll
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.Entities\bin\Debug\net10.0\HealthcareApp.Entities.pdb
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.Entities\obj\Debug\net10.0\HealthcareApp.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.Entities\obj\Debug\net10.0\HealthcareApp.Entities.AssemblyInfoInputs.cache
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.Entities\obj\Debug\net10.0\HealthcareApp.Entities.AssemblyInfo.cs
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.Entities\obj\Debug\net10.0\HealthcareApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.Entities\obj\Debug\net10.0\HealthcareApp.Entities.dll
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.Entities\obj\Debug\net10.0\refint\HealthcareApp.Entities.dll
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.Entities\obj\Debug\net10.0\HealthcareApp.Entities.pdb
+C:\Users\varsh\OneDrive\Desktop\B1_.NetAngular_SaiLatha_Healthcare Backend Application\HealthcareApp\HealthcareApp.Entities\obj\Debug\net10.0\ref\HealthcareApp.Entities.dll

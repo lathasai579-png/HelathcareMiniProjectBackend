@@ -1,0 +1,42 @@
+﻿@model HealthcareApp.Web.ViewModels.AppointmentViewModel
+
+<h2>Create Appointment</h2>
+
+<form asp-action="Create">
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <!-- Patient -->
+    <div class="form-group">
+        <label>Patient</label>
+        <select asp-for="PatientId" asp-items="ViewBag.Patients" class="form-control"></select>
+    </div>
+
+    <!-- Doctor -->
+    <div class="form-group">
+        <label>Doctor</label>
+        <select asp-for="DoctorId" asp-items="ViewBag.Doctors" class="form-control"></select>
+    </div>
+
+    <!-- Date -->
+    <div class="form-group">
+        <label>Date</label>
+        <input asp-for="Date" type="date" class="form-control"
+               min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+    </div>
+
+    <!-- Time -->
+    <div class="form-group">
+        <label>Time Slot</label>
+        <select asp-for="TimeSlot" class="form-control">
+            @foreach (var t in ViewBag.TimeSlots)
+            {
+                <option value="@t">@t</option>
+            }
+        </select>
+    </div>
+
+    <button class="btn btn-success mt-2">Save</button>
+    <a asp-action="Index" class="btn btn-secondary mt-2">Back</a>
+
+</form>

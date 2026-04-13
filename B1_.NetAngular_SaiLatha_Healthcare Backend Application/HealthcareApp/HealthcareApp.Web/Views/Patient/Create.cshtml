@@ -1,0 +1,71 @@
+﻿@model HealthcareApp.BLL.DTOs.PatientDto
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Patient</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        input, select, textarea {
+            width: 300px;
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Add Patient</h2>
+
+    <!-- ✅ VALIDATION SUMMARY -->
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="error">
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <div>@error.ErrorMessage</div>
+            }
+        </div>
+    }
+
+    <form method="post">
+
+        <input name="Name" value="@Model?.Name" placeholder="Name" required /><br />
+
+        <input name="Age" type="number" value="@Model?.Age" placeholder="Age" required /><br />
+
+        <select name="Gender">
+            <option>Select Gender</option>
+            <option value="Male" selected="@(Model?.Gender == "Male")">Male</option>
+            <option value="Female" selected="@(Model?.Gender == "Female")">Female</option>
+        </select><br />
+
+        <input name="PhoneNumber" value="@Model?.PhoneNumber" placeholder="Phone" /><br />
+
+        <input name="Email" value="@Model?.Email" placeholder="Email" /><br />
+
+        <textarea name="MedicalNotes" placeholder="Medical notes">@Model?.MedicalNotes</textarea><br />
+
+        <button type="submit">Save Patient</button>
+
+    </form>
+
+</body>
+</html>
