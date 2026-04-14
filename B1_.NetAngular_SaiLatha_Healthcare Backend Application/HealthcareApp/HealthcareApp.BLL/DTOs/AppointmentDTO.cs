@@ -7,6 +7,7 @@ namespace HealthcareApp.BLL.DTOs
 {
     public class AppointmentDTO
     {
+        [Key]
         public int AppointmentId { get; set; }
 
         [Required]
